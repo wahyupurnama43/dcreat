@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dcreat</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">DCREAT</div>
+        <nav>
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Find Work</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Become  a creator</a></li>
+                <a href="" class="btn btn-second">Sign In</a>
+                <a href="" class="btn btn-primary">Get Started</a>
+            </ul>
+        </nav>
+        <img src="./img/menu.svg" alt="" class="menu" onclick="togglemenu()">
+    </div>
+    <div class="container">
+        <div class="hero">
+            <h1>Find your inspiration and ideas <br> with graphic designer</h1>
+            <div class="sub-hero">
+                <div class="list-menu">
+                    <img src="./img/check.svg" alt="">
+                    <p>Match with creators</p>
+                </div>
+                <div class="list-menu">
+                    <img src="./img/check.svg" alt="">
+                    <p>Whitelist design favorit</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="search">
+            <img src="./img/search.svg" alt="">
+            <input type="text" autofocus>
+        </div>
+    </div>
+
+    <section class="content">
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="animate">Animation</li>
+            <li class="list" data-filter="branding">Branding</li>
+            <li class="list" data-filter="illustrasi">Illustrasi</li>
+            <li class="list" data-filter="mobile">Mobile</li>
+            <li class="list" data-filter="web">Web Design</li>
+        </ul>
+
+        <div class="product">
+            <a href="detail.html" class="itembox animate">
+                <img src="./img/1.jpg" alt="">
+                <div class="text">
+                    <div class="info">
+                        <img src="./img/user.png" alt="">
+                        <p>Swah Design</p>
+                        <span>TEAM</span>
+                    </div>
+                    <div class="like">
+                        <div class="d">
+                            <img src="./img/hati.svg" alt="">
+                            <span>100</span>
+                        </div>
+                        <div class="d">
+                            <img src="./img/mata.png" alt="">
+                            <span>100k</span>
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+            <div class="itembox mobile">
+                <img src="./img/2.jpg" alt="">
+                <div class="text">
+                    <div class="info">
+                        <img src="./img/user.png" alt="">
+                        <p>Swah Design</p>
+                        <span>TEAM</span>
+                    </div>
+                    <div class="like">
+                        <div class="d">
+                            <svg width="14" height="13"  class="like_hover" viewBox="0 0 14 13">
+                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.333344 -6.10352e-05H13.9817V13.0006H0.333344V-6.10352e-05Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.54914 6.08202C2.48381 8.99002 6.17647 11.3414 7.15781 11.9234C8.14247 11.3354 11.8618 8.95802 12.7665 6.08469C13.3605 4.22735 12.8091 1.87469 10.6185 1.16869C9.55714 0.82802 8.31914 1.03535 7.46447 1.69669C7.28581 1.83402 7.03781 1.83669 6.85781 1.70069C5.95247 1.02002 4.76981 0.820687 3.69181 1.16869C1.50447 1.87402 0.955141 4.22669 1.54914 6.08202ZM7.15847 13.0007C7.0758 13.0007 6.9938 12.9807 6.91913 12.94C6.71046 12.826 1.79513 10.1167 0.597132 6.38735C0.596465 6.38735 0.596465 6.38668 0.596465 6.38668C-0.155535 4.03868 0.681798 1.08802 3.38513 0.216684C4.65447 -0.193982 6.0378 -0.0133157 7.15647 0.692684C8.24047 0.00735101 9.68046 -0.181982 10.9245 0.216684C13.6305 1.08935 14.4705 4.03935 13.7191 6.38668C12.5598 10.0734 7.60847 12.8233 7.39847 12.9387C7.3238 12.98 7.24113 13.0007 7.15847 13.0007Z"/>
+                            </g>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1025 5.08329C10.8445 5.08329 10.6258 4.88529 10.6045 4.62395C10.5605 4.07595 10.1938 3.61329 9.67181 3.44462C9.40848 3.35929 9.26448 3.07729 9.34915 2.81529C9.43515 2.55262 9.71448 2.40995 9.97848 2.49262C10.8871 2.78662 11.5238 3.59129 11.6018 4.54262C11.6238 4.81795 11.4191 5.05929 11.1438 5.08129C11.1298 5.08262 11.1165 5.08329 11.1025 5.08329Z"/>
+                            </svg>
+                            <span>100</span>
+                        </div>
+                        <div class="d">
+                            <img src="./img/mata.png" alt="">
+                            <span>100k</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="itembox web">
+                <img src="./img/3.jpg" alt="">
+                <div class="text">
+                    <div class="info">
+                        <img src="./img/user.png" alt="">
+                        <p>Swah Design</p>
+                        <span>TEAM</span>
+                    </div>
+                    <div class="like">
+                        <div class="d">
+                            <img src="./img/hati.svg" alt="">
+                            <span>100</span>
+                        </div>
+                        <div class="d">
+                            <img src="./img/mata.png" alt="">
+                            <span>100k</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="itembox branding">
+                <img src="./img/3.jpg" alt="">
+                <div class="text">
+                    <div class="info">
+                        <img src="./img/user.png" alt="">
+                        <p>Swah Design</p>
+                        <span>TEAM</span>
+                    </div>
+                    <div class="like">
+                        <div class="d">
+                            <img src="./img/hati.svg" alt="">
+                            <span>100</span>
+                        </div>
+                        <div class="d">
+                            <img src="./img/mata.png" alt="">
+                            <span>100k</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="itembox web">
+                <img src="./img/1.jpg" alt="">
+                <div class="text">
+                    <div class="info">
+                        <img src="./img/user.png" alt="">
+                        <p>Swah Design</p>
+                        <span>TEAM</span>
+                    </div>
+                    <div class="like">
+                        <div class="d">
+                            <img src="./img/hati.svg" alt="">
+                            <span>100</span>
+                        </div>
+                        <div class="d">
+                            <img src="./img/mata.png" alt="">
+                            <span>100k</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="itembox mobile">
+                <img src="./img/2.jpg" alt="">
+                <div class="text">
+                    <div class="info">
+                        <img src="./img/user.png" alt="">
+                        <p>Swah Design</p>
+                        <span>TEAM</span>
+                    </div>
+                    <div class="like">
+                        <div class="d">
+                            <img src="./img/hati.svg" alt="">
+                            <span>100</span>
+                        </div>
+                        <div class="d">
+                            <img src="./img/mata.png" alt="">
+                            <span>100k</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="more-product">
+            <button href="" class="btn btn-second">Load More</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo-footer">
+            <h3>DCREAT</h3>
+            <p>Dcreat is the world’s leading community for creatives to share, grow, and get hired.</p>
+        </div>
+            <div class="menu-footer">
+                <h1>For Designer</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Find works</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Become  a creator</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="">APIs Developer</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer">
+                <h1>Be Our Friend</h1>
+                <ul>
+                    <li><a href="">3, Denpasar, Bali</a></li>
+                    <li><a href="">021 - 1111 - 2222</a></li>
+                    <li><a href="">support@dcreat.co,id</a></li>
+                </ul>
+            </div>
+    </footer>
+    <div class="footer">
+        <hr>
+        <p>All Rights Reserved Dcreat by wahyu purnama 2021</p>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        let menu = document.getElementById('menuList');
+        menu.style.maxHeight = '0px';
+
+        function togglemenu()
+        {
+            if(menu.style.maxHeight == '0px')
+            {
+                menu.style.maxHeight = '100vh';
+            }else{
+                menu.style.maxHeight = '0px';
+            }
+        }
+
+        $(document).ready(function(){
+            $('.list').click(function(){
+                let value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.itembox').show(1000);
+                    $('.more-product').show();
+                }else{
+                    $('.itembox').not('.'+value).hide();
+                    $('.more-product').not('.'+value).hide();
+                    $('.itembox').filter('.'+value).show(1000);
+                }
+            });
+        });
+
+        $(document).ready(function(){
+            $('.list').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+        });
+
+
+    </script>
+</body>
+</html>
