@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dcreat</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="menu">
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+         <div class="logo">DCREAT</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./work.html">Find Work</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Become  a creator</a></li>
+            <a href="" class="btn btn-second">Sign In</a>
+            <a href="" class="btn btn-primary">Get Started</a>
+        </ul>
+    </nav>
+
+    <section class="detail">
+        <div class="des">
+            <h1 class="j-work">UI Designer</h1>
+            <p>
+                PT. Timebook Overview
+                <br><br>
+                PT. Timebook is pioneering decentralized cloud storage with the world's first decentralized cloud storage network. We make object storage secure, private, and more resilient than other leading cloud storage providers. Our mission is to enable the decentralized future, and our vision is to be the storage layer for the decentralized internet. To accomplish this, it is important that our team is equipped to succeed.
+                <br><br>
+                Qualifications:
+                <br><br>
+                A portfolio showcasing excellent visual design skills
+                Experience in designing and shipping beautiful, usable, and responsive user interfaces
+                Advanced knowledge of HTML5 and CSS, 3-5 years experience in front-end development
+                Knowledge of responsive design
+                Knowledge of CSS Frameworks
+                Understanding of mobile web development principles
+                Background in user experience and design
+                Willing to work at a fast but sustainable pace, able to quickly iterate and review code while remaining curious, open-minded, collaborative, and committed to excellence
+                Excellent with documentation and habitual communicator of updates and roadblocks
+                Version control experience
+            </p>
+            <div class="save">
+                 <button href="" class="btn btn-primary">Apply for this position</button>
+             </div>
+         </div>
+
+         <div class="info-user-container">
+             <span class="line"></span>
+             <img src="./img/logo-work.png" alt="" class="img-work-company">
+             <span class="line"></span>
+         </div>
+         <div class="text-user">
+             <h3>Time Book</h3>
+             <p>Digital product design agency. UX/UI, Web design, Branding.</p>
+             
+         </div>
+    </section>
+
+    <footer>
+        <div class="logo-footer">
+            <h3>DCREAT</h3>
+            <p>Dcreat is the world’s leading community for creatives to share, grow, and get hired.</p>
+        </div>
+            <div class="menu-footer">
+                <h1>For Designer</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Find works</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Become  a creator</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="">APIs Developer</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer">
+                <h1>Be Our Friend</h1>
+                <ul>
+                    <li><a href="">3, Denpasar, Bali</a></li>
+                    <li><a href="">021 - 1111 - 2222</a></li>
+                    <li><a href="">support@dcreat.co,id</a></li>
+                </ul>
+            </div>
+    </footer>
+    <div class="footer">
+        <hr>
+        <p>All Rights Reserved Dcreat by wahyu purnama 2021</p>
+    </div>
+    
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function(){
+            nav.classList.toggle('slide');
+        });
+        $(document).scroll(function() {
+          var y = $(window).scrollTop();
+            if (y > 0) {
+                $("nav.menu").addClass("shActive");
+            }else {
+                $("nav.menu").removeClass("shActive");
+            }
+        });
+    </script>
+</body>
+</html>
