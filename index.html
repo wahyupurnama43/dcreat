@@ -6,24 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dcreat</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">DCREAT</div>
-        <nav>
-            <ul id="menuList">
+     <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+             <div class="logo">DCREAT</div>
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="./file/work.html">Find Work</a></li>
+                <li><a href="./work.html">Find Work</a></li>
                 <li><a href="">Pricing</a></li>
                 <li><a href="">Become  a creator</a></li>
                 <a href="" class="btn btn-second">Sign In</a>
                 <a href="" class="btn btn-primary">Get Started</a>
             </ul>
         </nav>
-        <img src="./img/menu.svg" alt="" class="menu" onclick="togglemenu()">
-    </div>
+
+
     <div class="container">
         <div class="hero">
             <h1>Find your inspiration and ideas <br> with graphic designer</h1>
@@ -48,11 +51,11 @@
     <section class="content">
         <ul>
             <li class="list active" data-filter="all">All</li>
-            <li class="list" data-filter="animate">Animation</li>
             <li class="list" data-filter="branding">Branding</li>
             <li class="list" data-filter="illustrasi">Illustrasi</li>
             <li class="list" data-filter="mobile">Mobile</li>
             <li class="list" data-filter="web">Web Design</li>
+            <li class="list" data-filter="animate">Animation</li>
         </ul>
 
         <div class="product">
@@ -77,7 +80,7 @@
 
                 </div>
             </a>
-            <div class="itembox mobile">
+            <a href="detail.html" class="itembox mobile">
                 <img src="./img/2.jpg" alt="">
                 <div class="text">
                     <div class="info">
@@ -104,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
             <div class="itembox web">
                 <img src="./img/3.jpg" alt="">
                 <div class="text">
@@ -235,20 +238,24 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script>
-        let menu = document.getElementById('menuList');
-        menu.style.maxHeight = '0px';
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
 
-        function togglemenu()
-        {
-            if(menu.style.maxHeight == '0px')
-            {
-                menu.style.maxHeight = '100vh';
-            }else{
-                menu.style.maxHeight = '0px';
+        menuToggle.addEventListener('click', function(){
+            nav.classList.toggle('slide');
+        });
+        
+        $(document).scroll(function() {
+          var y = $(window).scrollTop();
+            if (y > 0) {
+                $("nav.menu").addClass("shActive");
+            }else {
+                $("nav.menu").removeClass("shActive");
             }
-        }
+        });
+        
 
         $(document).ready(function(){
             $('.list').click(function(){
