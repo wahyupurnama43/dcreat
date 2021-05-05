@@ -5,7 +5,7 @@
 }
  @font-face {
      font-family: "Quicksand";
-     src: url('../font/static/Quicksand-VariableFont_wght.ttf');
+     src: url('../font/static/Quicksand-SemiBold.ttf');
  }
 
 *{
@@ -366,6 +366,13 @@ footer .menu-footer ul li a{
 }
 
 /* detail */
+.detail-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+}
 .detail{
     margin:7rem auto;
     width: 70%;
@@ -384,7 +391,7 @@ footer .menu-footer ul li a{
 .detail .user img{
     margin-right: 20px;
 }
-.detail .user .text h3{
+.detail .user .text h1{
     font-weight: 600;
     margin-bottom: 6px;
 }
@@ -400,18 +407,28 @@ footer .menu-footer ul li a{
 .detail .gambar-detail{
     text-align: center;
     padding: 2rem 0;
+    width: 50%;
 }
+.detail .detail-content .des{
+    margin-top: 20px;
+    width: 50%;
+    padding: 1em;
+}
+
 .detail .gambar-detail img{
     width: 100%;
+}
+.save{
+    display: flex;
+}
+.save-2{
+    margin-left: auto;
 }
 .save .btn-second{
     margin-left: 0;
 }
-.save{
-    display: flex;
 
-}
-.save button{
+.save button,.save-2 button{
     outline: none;
     border:none;
     display: flex;
@@ -420,7 +437,7 @@ footer .menu-footer ul li a{
     align-items: center;
     cursor: pointer;
 }
-.save img{
+.save img,.save-2 img{
     width: 15px;
     margin-right: 5px;
 }
@@ -455,6 +472,35 @@ span.line{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+.info-user-new{
+    background: #fff;
+    box-shadow: 3px 1px 20px 3px rgba(175, 175, 175, 0.25);
+    border-radius: 8px;
+    display: flex;
+    align-items:center;
+    padding:1em;
+}
+.user-info{
+    display: flex;
+}
+.user-info img{
+    margin-right:20px;
+}
+.detail-info-user h1{
+    font-size: 1.1em;
+}
+.detail-info-user p{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top:5px;
+}
+.detail-info-user p span{
+    color: var(--primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+/*work*/
 section.work{
     display: flex;
     margin:1rem 5rem;
@@ -750,6 +796,35 @@ hr{
         opacity: 1;
         transform: translateY(0);
     }
+   
+    .detail .detail-content{
+        display: block;
+    }
+    .detail .gambar-detail{
+        width: 100%;
+    }
+    .detail .des{
+        width: 100%;
+    }
+    .info-user-new{
+
+        position: fixed;
+        bottom:  0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .detail-info-user h1{
+        font-size: .9em;
+    }
+    .save-2 button{
+        margin-left: 5px;
+        font-size: .7em;
+        padding:6px 15px;
+    }
+    .save-2 img{
+        width: 12px;
+    }
 }
 @media (max-width:976px){
    .job{
@@ -770,6 +845,16 @@ hr{
     padding:0 20px;
    }
 
+}
+@media  (max-width:  724px){
+    .detail-info-user{
+        display: flex;
+        align-items:center;
+    }
+    .detail-info-user p{
+        display: none;
+
+    }
 }
 @media (max-width:662px)
 {
