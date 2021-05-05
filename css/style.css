@@ -803,7 +803,7 @@ hr{
     .detail .gambar-detail{
         width: 100%;
     }
-    .detail .des{
+    .detail .detail-content .des{
         width: 100%;
     }
     .info-user-new{
